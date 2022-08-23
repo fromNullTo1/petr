@@ -4,7 +4,9 @@ const box = document.getElementById('box');
 const btns = document.getElementsByTagName('button');
 const circles = document.getElementsByClassName('circle');
 const hearts = document.querySelectorAll('.heart');
-const oneHeart = document.querySelector('.heart');
+const wrapper = document.querySelector('.wrapper');
+const oneHeart = wrapper.querySelector('.heart');
+const wrapper = document.querySelector('.wrapper');
 
 console.dir(box);
 box.style.backgroundColor = 'blue';
@@ -23,5 +25,35 @@ hearts.forEach(e => {
 });
 
 const div = document.createElement('div');
-// const text = document.createTextNode('I was here');
+const text = document.createTextNode('I was here');
 
+div.classList.add('black');
+// document.body.append(div);
+// wrapper.append(div);
+// wrapper.appendChild(div);
+
+
+// wrapper.prepend(div);
+
+// hearts[0].before(div);
+// hearts[0].after(div);
+
+//old
+// wrapper.insertBefore(div, hearts[1]);
+
+// circles[0].remove();
+
+//old
+// wrapper.removeChild(hearts[1]);
+
+// hearts[0].replaceWith(circles[0]);
+
+//old
+// wrapper.replaceChild(circles[0], hearts[0])
+
+// div.innerHTML = 'Hello';
+div.innerHTML = '<h1>Hello</h1>';
+hearts[0].after(div);
+
+// div.textContent = 'hello'; 
+div.insertAdjacentHTML('beforebegin', '<h2>hello</h2>'); //add html code ... element
