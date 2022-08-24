@@ -57,3 +57,11 @@ hearts[0].after(div);
 
 // div.textContent = 'hello'; 
 div.insertAdjacentHTML('beforebegin', '<h2>hello</h2>'); //add html code ... element
+
+
+// <p class="text" href="some">some text</p>
+
+const textP = document.querySelector('#text');
+textP.id;
+textP.href = 'another' // work only with a, and some tags
+textP.title = 'some title';
