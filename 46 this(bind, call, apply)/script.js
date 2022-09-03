@@ -62,7 +62,7 @@ function sayName(surname) {
 }
 
 const user = {
-    name = 'John'
+    name: 'John'
 }
 
 sayName.call(user, 'Smith');
